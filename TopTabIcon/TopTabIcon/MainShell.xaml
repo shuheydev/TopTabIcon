@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="TopTabIcon.MainShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:TopTabIcon"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="Pink"
+    FlyoutBackgroundColor="Azure"
+    mc:Ignorable="d">
+
+    <FlyoutItem>
+        <Tab Title="BTab1" Icon="people">
+            <ShellContent Title="TTab1" ContentTemplate="{DataTemplate local:Page1}" />
+            <ShellContent Title="TTab2" ContentTemplate="{DataTemplate local:Page2}" />
+        </Tab>
+        <Tab
+            Title="BTab2"
+            FlyoutIcon="home"
+            Icon="home">
+            <ShellContent Title="Hello" ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>
